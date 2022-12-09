@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #20364b;
+}
+html {
+  font-size: 62.5%;
+}
+header {
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 95%;
+  margin: auto;
+}
+header #headerCon{
+    display: flex;
+    justify-content: space-between;
+}
+header .wrapper #logo {
+  height: 80px;
+}
+header .wrapper #logo img {
+  height: 100%;
+  object-fit: cover;
+}
+header .wrapper > ul {
+  display: flex;
+}
+header .wrapper ul li {
+  list-style-type: none;
+  margin: 0 20px;
+}
+header .wrapper > ul :nth-child(2) i {
+  margin: 5px;
+  color: #f6e207;
+}
+
+header .wrapper ul li a {
+  color: #fff;
+  font-size: 2.2rem;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+header .wrapper ul li ul {
+  display: none;
+  position: absolute;
+}
+
+header .wrapper form {
+  position: relative;
+}
+header .wrapper form input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  display: none;
+}
+header .wrapper form i {
+  top: 4px;
+  right: 0;
+  cursor: pointer;
+  background-color: #20364b;
+  padding: 1.6rem 0.7rem;
+  background-color: #f6e207;
+  border-radius: 50%;
+}
+
+
+#banner .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------Img------------------- */
+#banner .wrapper #imgsCon #parentImgCon{
+    position: relative;
+    height: 400px;
+}
+#banner .wrapper #imgsCon #parentImgCon #mainImg{
+    display: block;
+    height: 100%;
+}
+#banner .wrapper #imgsCon >div #childImgs :nth-child(1){
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    z-index: -1;
+}
+
+#banner .wrapper #imgsCon >div #childImgs :nth-child(2){
+    position: absolute;
+    top: 160px;
+    left: 50px;
+    z-index: -1;
+}
+
+
+/* --------------text-------------------- */
+#banner .wrapper #content{
+    margin-top: 50px;
+}
+#banner .wrapper #content h1{
+    color:#f6e207;
+    font-size: 5rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight:bolder;
+}
+
+#banner .wrapper #content h1 span{
+    color: #fff;
+}
+
+#banner .wrapper #content p{
+    width: 40%;
+}
+ #btn{
+    display:flex;
+    border: 1px solid red;
+
+}
