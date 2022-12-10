@@ -17,40 +17,55 @@
         <div id="logo">
           <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
         </div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li>
-            <a href="#">Services<i class="fa-solid fa-caret-down"></i></a>
+        <div id="headerRightSec">
+          <nav>
             <ul>
-              <li><a href="#">Services1</a></li>
-              <li><a href="#">Services2</a></li>
-              <li><a href="#">Services3</a></li>
+              <li><a href="#">Home</a></li>
+              <li id="parentli">
+                <a href="#">Services<i class="fa-solid fa-caret-down"></i></a>
+                <ul>
+                  <li><a href="#">Services1</a></li>
+                  <li><a href="#">Services2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">FAQ</a></li>
             </ul>
-          </li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-        <form action="#">
-          <input type="search" name="" id="search" />
-          <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
-        </form>
+          </nav>
+          <form action="#">
+            <input type="search" name="" id="search" />
+            <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+          </form>
+        </div>
       </div>
     </header>
+
     <main>
       <section id="banner">
         <div class="wrapper">
           <div id="content">
-            <h1>Suscribe Now <span><br>to Our Newsletters</span></h1>
+            <h1>
+              Suscribe Now <span><br />to Our Newsletters</span>
+            </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
               eligendi exercitationem in consectetur aliquam atque
               necessitatibus iusto, perspiciatis soluta possimus.
             </p>
-            <div id="btn">
-              <input type="text" />
-              <input type="email" name="" id="" />
-              <button>Send</button>
+            <div id="inputs">
+              <div>
+                <input type="text" name="" placeholder="Name" />
+              </div>
+              <div>
+                <input type="email" name="" placeholder="Email" />
+              </div>
+              <div>
+                <button>
+                  Send
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
             </div>
           </div>
           <div id="imgsCon">
@@ -59,11 +74,22 @@
               <div id="childImgs">
                 <img src="./images/img6.png" alt="" />
                 <img src="./images/design2.png" alt="" />
+                <img src="./images/image2sm.png" alt="" />
+                <img src="./images/image1sm.png" alt="" />
+                <img src="./images/image3sm.png" alt="" />
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
   </body>
 </html>

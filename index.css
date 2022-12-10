@@ -8,6 +8,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif ;
 }
 header {
   padding: 10px 0;
@@ -30,13 +31,34 @@ header .wrapper #logo img {
   height: 100%;
   object-fit: cover;
 }
-header .wrapper > ul {
+header .wrapper #headerRightSec  {
+  display: flex;
+}
+
+
+header .wrapper #headerRightSec nav> ul {
   display: flex;
 }
 header .wrapper ul li {
   list-style-type: none;
   margin: 0 20px;
+  position: relative;
+  padding:0 5px;
+  transition: all 0.7s ease;
 }
+header .wrapper ul li:hover::after{
+  content:"";
+  position: absolute;
+  width: 90%;
+  border: 1px solid #f6e207;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
 header .wrapper > ul :nth-child(2) i {
   margin: 5px;
   color: #f6e207;
@@ -44,16 +66,29 @@ header .wrapper > ul :nth-child(2) i {
 
 header .wrapper ul li a {
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-decoration: none;
-  font-family: "Nunito Sans", sans-serif;
 }
-
-header .wrapper ul li ul {
-  display: none;
+/* ----------dropDown----------------- */
+header .wrapper ul #parentli{
+  position: relative;
+}
+header .wrapper ul #parentli ul {
+  left: 0;
   position: absolute;
+  display: none;
+}
+header .wrapper ul #parentli ul li{
+  margin-bottom: 10px;
+}
+header .wrapper ul #parentli ul li a{
+  font-size: 1.8rem;
+}
+header .wrapper ul #parentli:hover ul{
+  display: block;
 }
 
+/* ---------------form------------------- */
 header .wrapper form {
   position: relative;
 }
@@ -72,36 +107,19 @@ header .wrapper form i {
   padding: 1.6rem 0.7rem;
   background-color: #f6e207;
   border-radius: 50%;
+  top: 0;
+}
+header .wrapper #headerRightSec form{
+  margin-left: 40px;
 }
 
 
+/* -------------mani----Sec----------------- */
 #banner .wrapper{
     display: flex;
     justify-content: space-between;
 }
 
-/* ------------------Img------------------- */
-#banner .wrapper #imgsCon #parentImgCon{
-    position: relative;
-    height: 400px;
-}
-#banner .wrapper #imgsCon #parentImgCon #mainImg{
-    display: block;
-    height: 100%;
-}
-#banner .wrapper #imgsCon >div #childImgs :nth-child(1){
-    position: absolute;
-    top: 0px;
-    left: 20px;
-    z-index: -1;
-}
-
-#banner .wrapper #imgsCon >div #childImgs :nth-child(2){
-    position: absolute;
-    top: 160px;
-    left: 50px;
-    z-index: -1;
-}
 
 
 /* --------------text-------------------- */
@@ -111,7 +129,6 @@ header .wrapper form i {
 #banner .wrapper #content h1{
     color:#f6e207;
     font-size: 5rem;
-    font-family: "Nunito Sans", sans-serif;
     font-weight:bolder;
 }
 
@@ -120,10 +137,71 @@ header .wrapper form i {
 }
 
 #banner .wrapper #content p{
-    width: 40%;
-}
- #btn{
-    display:flex;
-    border: 1px solid red;
+    width: 60%;
+    color: #fff;
+    font-size: 2rem;
 
+}
+#banner .wrapper #content #btn{
+    display:flex;
+    flex-direction: column;
+
+}
+
+#banner .wrapper #content div input{
+  padding: 7px 20px;
+  margin-bottom:10px;
+  border-radius: 50px;
+  border: 0;
+  outline: 0;
+}
+#banner .wrapper #content :nth-child(1) input{
+  margin-top: 10px;
+}
+
+#banner .wrapper #content  button{
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 0;
+  font-weight: 600;
+  color: #20364b;
+  font-size: 1.5rem;
+  background-color:#f6e207 ;
+
+}
+
+
+/* ------------------Img------------------- */
+#banner .wrapper #imgsCon {
+  margin-right: 50px;
+}
+#banner .wrapper #imgsCon #parentImgCon{
+  position: relative;
+  height: 400px;
+}
+#banner .wrapper #imgsCon #parentImgCon #mainImg{
+  display: block;
+  height: 100%;
+}
+#banner .wrapper #imgsCon >div #childImgs :nth-child(1){
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  z-index: -1;
+}
+
+#banner .wrapper #imgsCon >div #childImgs :nth-child(2){
+  position: absolute;
+  top: 160px;
+  left: 50px;
+  z-index: -1;
+}
+#banner .wrapper #imgsCon >div #childImgs :nth-child(4){
+  position: absolute;
+  top: 60px;
+  right: 430px;
+}
+#banner .wrapper #imgsCon >div #childImgs :nth-child(5){
+  position: absolute;
+  right: 0px;
 }
