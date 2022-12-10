@@ -1,6 +1,5 @@
 $(".fa-solid ").click(()=>{
-    $(".fa-solid")[0].style.position="absolute";
-    $(".fa-solid")[0].style.color="#21243d";
+    $(".fa-solid").css({"position": "absolute", "padding": "0", "top":"13px","right":"5px","color":"#20364b"});
    $("#search")[0].style.display="block";
 
 })
